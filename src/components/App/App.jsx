@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
+import Supported from '../Supported/Supported';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
       <Feeling />
 
       <Understanding />
+
+      <Supported />
 
     </div>
   );
