@@ -78,3 +78,27 @@ Improve the styling of the app using Material-UI. This might include cards, snac
 
 ### DEPLOY
 Deploy your project to Heroku. You'll need to read the special instructions for building and deploying with React. 
+
+
+- [ ] Feeling Component
+    - [ ] click "next" to go to Understanding component
+    - [ ] Input validation - only advance if score was provided
+
+
+- [ ] Understanding component
+    - [ ] click "next" to go to Supported component
+    - [ ] Input validation - only advance if score was provided
+
+- [ ] Supported component
+    - [ ] click "next" to go to Comments component
+    - [ ] Input validation - only advance if score was provided
+
+- [ ] Comments component
+    - [ ] click "next" to go to Review component
+
+
+- [ ] Review component
+    - [ ] click "submit" to submit the completed form
+        - [ ] display submission success page
+        - [ ] "take a new survey" button
+            - [ ] needs to delete all previous form data and return to first page
