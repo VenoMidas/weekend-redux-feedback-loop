@@ -81,20 +81,28 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 
 
 - [ ] Feeling Component
-    - [ ] click "next" to go to Understanding component
+    - [X] click "next" to go to Understanding component
+    - [X] Create Input
+    - [ ] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 
 - [ ] Understanding component
-    - [ ] click "next" to go to Supported component
+    - [X] click "next" to go to Supported component
+    - [ ] Create Input
+    - [ ] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 - [ ] Supported component
-    - [ ] click "next" to go to Comments component
+    - [X] click "next" to go to Comments component
+    - [ ] Create Input
+    - [ ] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 - [ ] Comments component
-    - [ ] click "next" to go to Review component
+    - [ ] Create Input
+    - [ ] link values to redux
+    - [X] click "next" to go to Review component
 
 
 - [ ] Review component
@@ -102,3 +110,5 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
         - [ ] display submission success page
         - [ ] "take a new survey" button
             - [ ] needs to delete all previous form data and return to first page
+
+- [ ] Redux store setup
