@@ -89,18 +89,18 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 
 - [ ] Understanding component
     - [X] click "next" to go to Supported component
-    - [ ] Create Input
+    - [X] Create Input
     - [ ] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 - [ ] Supported component
     - [X] click "next" to go to Comments component
-    - [ ] Create Input
+    - [X] Create Input
     - [ ] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 - [ ] Comments component
-    - [ ] Create Input
+    - [X] Create Input
     - [ ] link values to redux
     - [X] click "next" to go to Review component
 
