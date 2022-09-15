@@ -111,4 +111,6 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
         - [ ] "take a new survey" button
             - [ ] needs to delete all previous form data and return to first page
 
-- [ ] Redux store setup
+- [X] Redux store setup
+ - [X] npm install redux@4 react-redux@7
+ - [X] npm install redux-logger@3
