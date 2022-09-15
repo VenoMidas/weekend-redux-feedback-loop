@@ -103,8 +103,8 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 
 - [ ] Review component
     - [ ] When submit is clicked - POST to DB
-    - [ ] Then display submission success page
-    - [ ] Button to start new survey and go to first step
+    - [X] Then display submission success page
+    - [X] Button to start new survey and go to first step
         - [ ] Have this button reset values
 
 - [X] Redux store setup

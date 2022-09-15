@@ -12,7 +12,7 @@ function Review() {
             <h3>Understanding Rating: {feedback.understanding}</h3>
             <h3>Supported Rating: {feedback.support}</h3>
             <h3>Comments: {feedback.comments}</h3>
-            <button onClick={() => history.push('/')} >Submit - home</button>
+            <button onClick={() => history.push('/success')} >Submit</button>
         </>
     );
 };
