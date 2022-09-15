@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Comments() {
+    const history = useHistory();
+
     return (
         <>
             <h1>Any comments you want to leave?</h1>
             <label htmlFor="comments">Optional: </label>
             <input type="text" for='comments' />
-            <Link to='/review'>
-                <button>Next - Review</button>
-            </Link>
+            <button onClick={() => history.push('/review')} >Next - Review</button>
         </>
     );
 };

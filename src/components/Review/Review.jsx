@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Review() {
+    const history = useHistory();
+
     return (
         <>
-        <h1>This is the Review component</h1>
-        <Link to='/'>
-            <button>Submit - home</button>
-        </Link>
+            <h1>This is the Review component</h1>
+            <button onClick={() => history.push('/')} >Submit - home</button>
         </>
     );
 };

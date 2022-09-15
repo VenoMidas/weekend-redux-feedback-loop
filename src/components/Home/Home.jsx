@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function Home() {
+    const history = useHistory();
+
     return (
-        <Link to='/feeling'>
-            <button>Start Survey</button>
-        </Link>
+        <>
+            <button onClick={() => history.push('/feeling')} >Start Survey</button>
+        </>
+
     );
 };
 
