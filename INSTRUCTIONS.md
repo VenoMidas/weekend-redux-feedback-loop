@@ -111,7 +111,7 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
     - [X] npm install redux@4 react-redux@7
     - [X] npm install redux-logger@3
 
-- [ ] Input validation - visually display - advance only if score was provided
-    - [ ] Feeling
-    - [ ] Understanding
-    - [ ] Support
+- [X] Input validation - visually display - advance only if score was provided
+    - [X] Feeling
+    - [X] Understanding
+    - [X] Support

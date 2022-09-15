@@ -16,7 +16,7 @@ function Supported() {
             <h3>Rate 1 through 5</h3>
             <h5>* Required *</h5>
             <input required type="number" value={support} onChange={handleChange} min='1' max='5' />
-            <button onClick={() => history.push('/comments')} >Next - comments</button>
+            <button disabled={support > 0 && support < 6 ? false : true} onClick={() => history.push('/comments')} >Next - comments</button>
         </>
     );
 };
