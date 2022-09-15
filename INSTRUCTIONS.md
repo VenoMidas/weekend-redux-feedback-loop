@@ -115,3 +115,17 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
     - [X] Feeling
     - [X] Understanding
     - [X] Support
+    
+- [X] Allow user to go back to previous page and update score
+
+- [ ] Add MUI styling
+    - [ ] cards, snackbars, buttons, a nav bar, icons, and/or a theme?
+
+- [ ] Admin Section
+    - [ ] Display existing feedback at /admin
+        - [ ] most recent feedback on top
+    - [ ] Allow user to delete existing feedback
+        - [ ] Prompt to confirm deletion 
+    - [ ] Add ability to flag feedback for further reviw
+
+- Add the ability to flag an existing feedback entry for further review on the /admin view.
