@@ -10,11 +10,16 @@ function Feeling() {
         dispatch({ type: 'SET_FEELING', payload: event.target.value });
     };
 
+    const goBack = () => {
+        history.goBack();
+    };
+
     return (
         <>
             <h1>How are you feeling today?</h1>
             <h3>Rate 1 through 5</h3>
             <h5>* Required *</h5>
+            <button onClick={goBack} >Go Back</button>
             <input required type="number" value={feeling} onChange={handleChange} min='1' max='5' />
             <button disabled={feeling > 0 && feeling < 6 ? false : true} onClick={() => history.push('/understanding')} >Next - Understanding</button>
         </>

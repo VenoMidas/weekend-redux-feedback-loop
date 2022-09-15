@@ -10,10 +10,15 @@ function Comments() {
         dispatch({ type: 'SET_COMMENTS', payload: event.target.value });
     };
 
+    const goBack = () => {
+        history.goBack();
+    };
+
     return (
         <>
             <h1>Any comments you want to leave?</h1>
             <h5>* Optional *</h5>
+            <button onClick={goBack} >Go Back</button>
             <input type="text" value={comments} onChange={handleChange} />
             <button onClick={() => history.push('/review')} >Next - Review</button>
         </>
