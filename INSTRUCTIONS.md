@@ -83,25 +83,25 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [ ] Feeling Component
     - [X] click "next" to go to Understanding component
     - [X] Create Input
-    - [ ] link values to redux
+    - [X] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 
 - [ ] Understanding component
     - [X] click "next" to go to Supported component
     - [X] Create Input
-    - [ ] link values to redux
+    - [X] link values to redux
     - [ ] Input validation - only advance if score was provided
 
 - [ ] Supported component
     - [X] click "next" to go to Comments component
     - [X] Create Input
-    - [ ] link values to redux
+    - [X] link values to redux
     - [ ] Input validation - only advance if score was provided
 
-- [ ] Comments component
+- [X] Comments component
     - [X] Create Input
-    - [ ] link values to redux
+    - [X] link values to redux
     - [X] click "next" to go to Review component
 
 
