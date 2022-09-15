@@ -80,24 +80,20 @@ Improve the styling of the app using Material-UI. This might include cards, snac
 Deploy your project to Heroku. You'll need to read the special instructions for building and deploying with React. 
 
 
-- [ ] Feeling Component
+- [X] Feeling Component
     - [X] click "next" to go to Understanding component
     - [X] Create Input
     - [X] link values to redux
-    - [ ] Input validation - only advance if score was provided
 
-
-- [ ] Understanding component
+- [X] Understanding component
     - [X] click "next" to go to Supported component
     - [X] Create Input
     - [X] link values to redux
-    - [ ] Input validation - only advance if score was provided
 
-- [ ] Supported component
+- [X] Supported component
     - [X] click "next" to go to Comments component
     - [X] Create Input
     - [X] link values to redux
-    - [ ] Input validation - only advance if score was provided
 
 - [X] Comments component
     - [X] Create Input
@@ -106,11 +102,16 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 
 
 - [ ] Review component
-    - [ ] click "submit" to submit the completed form
-        - [ ] display submission success page
-        - [ ] "take a new survey" button
-            - [ ] needs to delete all previous form data and return to first page
+    - [ ] When submit is clicked - POST to DB
+    - [ ] Then display submission success page
+    - [ ] Button to start new survey and go to first step
+        - [ ] Have this button reset values
 
 - [X] Redux store setup
- - [X] npm install redux@4 react-redux@7
- - [X] npm install redux-logger@3
+    - [X] npm install redux@4 react-redux@7
+    - [X] npm install redux-logger@3
+
+- [ ] Input validation - visually display - advance only if score was provided
+    - [ ] Feeling
+    - [ ] Understanding
+    - [ ] Support
