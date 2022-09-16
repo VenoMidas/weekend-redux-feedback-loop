@@ -10,7 +10,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Checkbox from '@mui/material/Checkbox';
 
-const FeedbackItem = ({ feedback, deleteFeedback }) => {
+const FeedbackItem = ({ feedback, deleteFeedback, flagItem }) => {
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
@@ -25,7 +25,7 @@ const FeedbackItem = ({ feedback, deleteFeedback }) => {
         <>
             <TableRow>
                 <TableCell>
-                    <Checkbox />
+                    <Checkbox checked={feedback.flagged} onClick={(event) => flagItem(feedback.id, event.target.checked)} />
                 </TableCell>
                 <TableCell>{feedback.feeling}</TableCell>
                 <TableCell>{feedback.understanding}</TableCell>

@@ -40,6 +40,21 @@ const Admin = () => {
         });
     };
 
+    function flagItem(feedbackId, flagged) {
+        axios({
+            method: 'PUT',
+            url: `/feedback/flagged/${feedbackId}`,
+            data: {
+                flagged: flagged,
+            }
+        }).then((response) => {
+            getFeedback();
+        }).catch((error) => {
+            console.log(error);
+            alert('Something went wrong!')
+        });
+    };
+
     return (
         <>
             <Typography variant="h3" gutterBottom>Results</Typography>
@@ -69,7 +84,7 @@ const Admin = () => {
                     <TableBody>
                         {
                             feedbackArray.map(feedbackItem => (
-                                <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} deleteFeedback={deleteFeedback} />
+                                <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} deleteFeedback={deleteFeedback} flagItem={flagItem} />
                             ))
                         }
                     </TableBody>

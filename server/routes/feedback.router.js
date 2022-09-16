@@ -38,5 +38,17 @@ router.delete('/:id', (req, res) => {
     });
 });
 
+// PUT /feedback/flagged/id
+router.put('/flagged/:id', (req, res) => {
+    const feedbackId = req.params.id;
+    const feedback = req.body;
+    const queryText = `UPDATE "feedback" SET "flagged" = $1 WHERE "id" = $2;`;
+    pool.query(queryText, [feedback.flagged, feedbackId]).then((results) => {
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    });
+});
 
 module.exports = router;
