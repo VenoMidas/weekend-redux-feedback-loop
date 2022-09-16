@@ -23,14 +23,32 @@ const Admin = () => {
 
     return (
         <>
-            <h1>This is the admin page</h1>
-            <ul>
-                {
-                    feedbackArray.map(feedbackItem => (
-                        <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} />
-                    ))
-                }
-            </ul>
+            <h1>Results</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feeling</th>
+                        <th>Understanding</th>
+                        <th>Support</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        feedbackArray.map(feedbackItem => (
+                            <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} />
+                        ))
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
         </>
     );
 };

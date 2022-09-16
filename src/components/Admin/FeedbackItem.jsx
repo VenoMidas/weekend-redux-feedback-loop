@@ -3,12 +3,12 @@ const FeedbackItem = ({ feedback }) => {
 
     return (
         <>
-            <li>
-                <div>Feeling: {feedback.feeling}</div>
-                <div>Understanding: {feedback.understanding}</div>
-                <div>Support: {feedback.support}</div>
-                <div>Comments: {feedback.comments}</div>
-            </li>
+            <tr>
+                <td>{feedback.feeling}</td>
+                <td>{feedback.understanding}</td>
+                <td>{feedback.support}</td>
+                <td>{feedback.comments}</td>
+            </tr>
         </>
     );
 };
