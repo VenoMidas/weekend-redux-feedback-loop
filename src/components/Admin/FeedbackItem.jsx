@@ -8,6 +8,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Checkbox from '@mui/material/Checkbox';
 
 const FeedbackItem = ({ feedback, deleteFeedback }) => {
     const [open, setOpen] = useState(false);
@@ -23,6 +24,9 @@ const FeedbackItem = ({ feedback, deleteFeedback }) => {
     return (
         <>
             <TableRow>
+                <TableCell>
+                    <Checkbox />
+                </TableCell>
                 <TableCell>{feedback.feeling}</TableCell>
                 <TableCell>{feedback.understanding}</TableCell>
                 <TableCell>{feedback.support}</TableCell>

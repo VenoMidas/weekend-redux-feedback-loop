@@ -58,6 +58,7 @@ const Admin = () => {
                     }}>
                     <TableHead>
                         <TableRow>
+                            <TableCell>Flag for review</TableCell>
                             <TableCell>Feeling</TableCell>
                             <TableCell>Understanding</TableCell>
                             <TableCell>Support</TableCell>
