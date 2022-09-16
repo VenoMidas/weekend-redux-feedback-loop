@@ -9,6 +9,7 @@ import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Success from '../Success/Success';
+import Admin from '../Admin/Admin';
 import Container from '@mui/material/Container';
 
 function App() {
@@ -46,6 +47,10 @@ function App() {
 
         <Route exact path='/success'>
           <Success />
+        </Route>
+
+        <Route exact path='/admin'>
+          <Admin />
         </Route>
 
       </Router>
