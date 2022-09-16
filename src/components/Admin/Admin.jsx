@@ -28,6 +28,17 @@ const Admin = () => {
         });
     };
 
+    const deleteFeedback = (feedbackId) => {
+        axios({
+            method: 'DELETE',
+            url: `/feedback/${feedbackId}`
+        }).then((response) => {
+            getFeedback();
+        }).catch((error) => {
+            console.log(error);
+            alert('Something went wrong');
+        });
+    };
 
     return (
         <>
@@ -57,7 +68,7 @@ const Admin = () => {
                     <TableBody>
                         {
                             feedbackArray.map(feedbackItem => (
-                                <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} />
+                                <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} deleteFeedback={deleteFeedback} />
                             ))
                         }
                     </TableBody>

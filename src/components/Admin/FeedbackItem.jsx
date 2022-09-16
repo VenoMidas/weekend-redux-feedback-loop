@@ -1,7 +1,7 @@
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-const FeedbackItem = ({ feedback }) => {
+const FeedbackItem = ({ feedback, deleteFeedback }) => {
 
     return (
         <>
@@ -16,6 +16,7 @@ const FeedbackItem = ({ feedback }) => {
                             cursor: "pointer",
                         }}
                         color="error"
+                        onClick={() => deleteFeedback(feedback.id)}
                     />
                 </TableCell>
             </TableRow>
