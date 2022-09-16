@@ -32,7 +32,7 @@ const Admin = () => {
     return (
         <>
             <Typography variant="h3" gutterBottom>Results</Typography>
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} elevation={6}>
                 <Table
                     sx={{
                         width: {
