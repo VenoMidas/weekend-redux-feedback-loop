@@ -2,6 +2,13 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import ProgressStepper from "../ProgressStepper/ProgressStepper";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Review() {
     const history = useHistory();
@@ -32,13 +39,41 @@ function Review() {
     return (
         <>
             <ProgressStepper stepProp={5} />
-            <h1>Summary:</h1>
-            <h3>Feeling rating : {feedback.feeling}</h3>
-            <h3>Understanding Rating: {feedback.understanding}</h3>
-            <h3>Supported Rating: {feedback.support}</h3>
-            <h3>Comments: {feedback.comments}</h3>
-            <button onClick={goBack} >Go Back</button>
-            <button onClick={handleSubmit} >Submit</button>
+            <Card
+                elevation={6}
+                sx={{
+                    width: {
+                        xs: '100%',
+                        sm: '75%',
+                        md: '60%',
+                        lg: '60%',
+                        xl: '60%',
+                    },
+                    ml: 'auto',
+                    mr: 'auto',
+                    mt: 5,
+                }}>
+                <CardContent>
+                    <Typography variant="h3" gutterBottom>Summary:</Typography>
+                    <Typography variant="body1" gutterBottom>Feeling rating : {feedback.feeling}</Typography>
+                    <Typography variant="body1" gutterBottom>Understanding Rating: {feedback.understanding}</Typography>
+                    <Typography variant="body1" gutterBottom>Supported Rating: {feedback.support}</Typography>
+                    <Typography variant="body1" gutterBottom>Comments: {feedback.comments}</Typography>
+                </CardContent>
+
+                <CardActions disableSpacing>
+                    <Button onClick={goBack} startIcon={<ArrowBackIcon />}>Go Back</Button>
+                    <Button
+                        onClick={handleSubmit}
+                        sx={{ ml: 'auto' }}
+                        color='success'
+                        endIcon={<ArrowForwardIcon />}
+                    >
+                        Submit
+                    </Button>
+                </CardActions>
+
+            </Card>
         </>
     );
 };
