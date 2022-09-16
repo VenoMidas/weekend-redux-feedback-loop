@@ -124,7 +124,7 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [ ] Admin Section
     - [X] Display existing feedback at /admin
         - [X] most recent feedback on top
-    - [ ] Allow user to delete existing feedback
+    - [X] Allow user to delete existing feedback
         - [ ] Prompt to confirm deletion 
     - [ ] Add the ability to flag an existing feedback entry for further review on the /admin view.
 
