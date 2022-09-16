@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
+import ProgressStepper from "../ProgressStepper/ProgressStepper";
 
 function Understanding() {
     const history = useHistory();
@@ -16,6 +17,7 @@ function Understanding() {
 
     return (
         <>
+            <ProgressStepper stepProp={2} />
             <h1>How well are you understanding the content?</h1>
             <h3>Rate 1 through 5</h3>
             <h5>* Required *</h5>

@@ -1,6 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
+import ProgressStepper from "../ProgressStepper/ProgressStepper";
 
 function Review() {
     const history = useHistory();
@@ -30,6 +31,7 @@ function Review() {
 
     return (
         <>
+            <ProgressStepper stepProp={5} />
             <h1>Summary:</h1>
             <h3>Feeling rating : {feedback.feeling}</h3>
             <h3>Understanding Rating: {feedback.understanding}</h3>

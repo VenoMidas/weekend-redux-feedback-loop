@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
+import ProgressStepper from "../ProgressStepper/ProgressStepper";
 
 function Comments() {
     const history = useHistory();
@@ -16,6 +17,7 @@ function Comments() {
 
     return (
         <>
+            <ProgressStepper stepProp={4} />
             <h1>Any comments you want to leave?</h1>
             <h5>* Optional *</h5>
             <button onClick={goBack} >Go Back</button>
