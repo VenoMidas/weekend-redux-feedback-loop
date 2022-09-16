@@ -9,11 +9,12 @@ import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Success from '../Success/Success';
+import Container from '@mui/material/Container';
 
 function App() {
 
   return (
-    <div className='App'>
+    <Container className='App'>
 
       <Router>
 
@@ -49,7 +50,7 @@ function App() {
 
       </Router>
 
-    </div>
+    </Container>
   );
 };
 
