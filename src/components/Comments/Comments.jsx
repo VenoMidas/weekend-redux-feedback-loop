@@ -44,6 +44,7 @@ function Comments() {
                     <Typography variant="h3" gutterBottom>Any comments you want to leave?</Typography>
                     <br />
                     <TextField
+                        sx={{ width: 1 / 2 }}
                         type="text"
                         value={comments}
                         onChange={handleChange}

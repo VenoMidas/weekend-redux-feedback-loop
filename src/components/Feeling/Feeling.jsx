@@ -44,6 +44,7 @@ function Feeling() {
                     <Typography variant="h3" gutterBottom>How are you feeling today?</Typography>
                     <br />
                     <TextField
+                        sx={{ width: 1/2 }}
                         required
                         type="number"
                         value={feeling}

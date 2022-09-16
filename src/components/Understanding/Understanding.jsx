@@ -44,6 +44,7 @@ function Understanding() {
                     <Typography variant="h3" gutterBottom>How well are you understanding the content?</Typography>
                     <br />
                     <TextField
+                        sx={{ width: 1 / 2 }}
                         required
                         type="number"
                         value={understanding}

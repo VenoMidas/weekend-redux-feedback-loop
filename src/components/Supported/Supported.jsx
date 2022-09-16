@@ -44,6 +44,7 @@ function Supported() {
                     <Typography variant="h3" gutterBottom>How well are you being supported?</Typography>
                     <br />
                     <TextField
+                        sx={{ width: 1 / 2 }}
                         required
                         type="number"
                         value={support}
