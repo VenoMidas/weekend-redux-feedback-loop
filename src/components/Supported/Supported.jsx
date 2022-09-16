@@ -61,7 +61,7 @@ function Supported() {
                     <Button onClick={goBack} startIcon={<ArrowBackIcon />}>Go Back</Button>
                     <Button
                         disabled={support > 0 && support < 6 ? false : true}
-                        onClick={() => history.push('/comments')}
+                        onClick={() => history.push('/step/comments')}
                         sx={{ ml: 'auto' }}
                         color='success'
                         endIcon={<ArrowForwardIcon />}

@@ -61,7 +61,7 @@ function Understanding() {
                     <Button onClick={goBack} startIcon={<ArrowBackIcon />}>Go Back</Button>
                     <Button
                         disabled={understanding > 0 && understanding < 6 ? false : true}
-                        onClick={() => history.push('/supported')}
+                        onClick={() => history.push('/step/supported')}
                         sx={{ ml: 'auto' }}
                         color='success'
                         endIcon={<ArrowForwardIcon />}

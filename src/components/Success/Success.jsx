@@ -13,7 +13,7 @@ function Success() {
 
     const handleButton = () => {
         dispatch({ type: 'CLEAR_ALL' });
-        history.push('/feeling');
+        history.push('/step/feeling');
     };
 
     return (

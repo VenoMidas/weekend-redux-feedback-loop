@@ -2,8 +2,11 @@ import Icon from '@mui/material/Icon';
 import RateReviewIcon from '@mui/icons-material/RateReview';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import { Link, useLocation } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
+    const location = useLocation();
 
     return (
         <>
@@ -26,6 +29,19 @@ const Header = () => {
                 </Grid>
 
             </Grid>
+
+            <ul>
+                <li>
+                    <Link to="/admin" className={location.pathname === '/admin' ? 'active' : undefined}>
+                        Admin
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/step/feeling" className={location.pathname.startsWith('/step') ? 'active' : undefined}>
+                        Feedback
+                    </Link>
+                </li>
+            </ul>
         </>
     );
 };

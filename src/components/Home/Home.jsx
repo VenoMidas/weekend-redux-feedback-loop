@@ -12,7 +12,7 @@ function Home() {
                 color="success"
                 size="large"
                 endIcon={<StartIcon />}
-                onClick={() => history.push('/feeling')}
+                onClick={() => history.push('/step/feeling')}
             >
                 Start Survey
             </Button>

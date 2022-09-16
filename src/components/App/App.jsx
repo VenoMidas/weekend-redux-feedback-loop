@@ -25,27 +25,27 @@ function App() {
           <Home />
         </Route>
 
-        <Route exact path='/feeling' >
+        <Route exact path='/step/feeling' >
           <Feeling />
         </Route>
 
-        <Route exact path='/understanding' >
+        <Route exact path='/step/understanding' >
           <Understanding />
         </Route>
 
-        <Route exact path='/supported' >
+        <Route exact path='/step/supported' >
           <Supported />
         </Route>
 
-        <Route exact path='/comments' >
+        <Route exact path='/step/comments' >
           <Comments />
         </Route>
 
-        <Route exact path='/review' >
+        <Route exact path='/step/review' >
           <Review />
         </Route>
 
-        <Route exact path='/success'>
+        <Route exact path='/step/success'>
           <Success />
         </Route>
 

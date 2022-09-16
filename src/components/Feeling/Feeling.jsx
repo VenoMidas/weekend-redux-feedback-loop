@@ -44,7 +44,7 @@ function Feeling() {
                     <Typography variant="h3" gutterBottom>How are you feeling today?</Typography>
                     <br />
                     <TextField
-                        sx={{ width: 1/2 }}
+                        sx={{ width: 1 / 2 }}
                         required
                         type="number"
                         value={feeling}
@@ -61,7 +61,7 @@ function Feeling() {
                     <Button onClick={goBack} startIcon={<ArrowBackIcon />} >Go Back</Button>
                     <Button
                         disabled={feeling > 0 && feeling < 6 ? false : true}
-                        onClick={() => history.push('/understanding')}
+                        onClick={() => history.push('/step/understanding')}
                         sx={{ ml: 'auto' }}
                         color='success'
                         endIcon={<ArrowForwardIcon />}

@@ -58,12 +58,12 @@ function Comments() {
                 <CardActions disableSpacing>
                     <Button onClick={goBack} startIcon={<ArrowBackIcon />}>Go Back</Button>
                     <Button
-                        onClick={() => history.push('/review')}
+                        onClick={() => history.push('/step/review')}
                         sx={{ ml: 'auto' }}
                         color='success'
                         endIcon={<ArrowForwardIcon />}
                     >
-                        Next - Review
+                        Next
                     </Button>
                 </CardActions>
 
