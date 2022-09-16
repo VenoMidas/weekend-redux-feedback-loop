@@ -1,6 +1,7 @@
 import React from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import Header from '../Header/Header';
 import Home from '../Home/Home';
 import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
@@ -8,18 +9,16 @@ import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Success from '../Success/Success';
+import Container from '@mui/material/Container';
 
 function App() {
 
   return (
-    <div className='App'>
-
-      <header className='App-header'>
-        <h1 className='App-title'>Feedback!</h1>
-        <h4>Don't forget it!</h4>
-      </header>
+    <Container className='App'>
 
       <Router>
+
+        <Header />
 
         <Route exact path='/' >
           <Home />
@@ -51,7 +50,7 @@ function App() {
 
       </Router>
 
-    </div>
+    </Container>
   );
 };
 

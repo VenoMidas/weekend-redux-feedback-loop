@@ -118,8 +118,8 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
     
 - [X] Allow user to go back to previous page and update score
 
-- [ ] Add MUI styling
-    - [ ] cards, snackbars, buttons, a nav bar, icons, and/or a theme?
+- [X] Add MUI styling
+    - [X] cards, snackbars, buttons, a nav bar, icons, and/or a theme?
 
 - [ ] Admin Section
     - [ ] Display existing feedback at /admin
@@ -128,3 +128,5 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
         - [ ] Prompt to confirm deletion 
     - [ ] Add ability to flag feedback for further reviw
     - [ ] Add the ability to flag an existing feedback entry for further review on the /admin view.
+
+- [ ] Deploy to heroku
