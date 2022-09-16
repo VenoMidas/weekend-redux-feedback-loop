@@ -121,7 +121,7 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [X] Add MUI styling
     - [X] cards, snackbars, buttons, a nav bar, icons, and/or a theme?
 
-- [ ] Admin Section
+- [X] Admin Section
     - [X] Display existing feedback at /admin
         - [X] most recent feedback on top
     - [X] Allow user to delete existing feedback
