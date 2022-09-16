@@ -1,14 +1,16 @@
+import TableCell from '@mui/material/TableCell';
+import TableRow from '@mui/material/TableRow';
 
 const FeedbackItem = ({ feedback }) => {
 
     return (
         <>
-            <tr>
-                <td>{feedback.feeling}</td>
-                <td>{feedback.understanding}</td>
-                <td>{feedback.support}</td>
-                <td>{feedback.comments}</td>
-            </tr>
+            <TableRow>
+                <TableCell>{feedback.feeling}</TableCell>
+                <TableCell>{feedback.understanding}</TableCell>
+                <TableCell>{feedback.support}</TableCell>
+                <TableCell>{feedback.comments}</TableCell>
+            </TableRow>
         </>
     );
 };
