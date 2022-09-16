@@ -28,6 +28,32 @@ const Admin = () => {
         });
     };
 
+    const deleteFeedback = (feedbackId) => {
+        axios({
+            method: 'DELETE',
+            url: `/feedback/${feedbackId}`
+        }).then((response) => {
+            getFeedback();
+        }).catch((error) => {
+            console.log(error);
+            alert('Something went wrong');
+        });
+    };
+
+    function flagItem(feedbackId, flagged) {
+        axios({
+            method: 'PUT',
+            url: `/feedback/flagged/${feedbackId}`,
+            data: {
+                flagged: flagged,
+            }
+        }).then((response) => {
+            getFeedback();
+        }).catch((error) => {
+            console.log(error);
+            alert('Something went wrong!')
+        });
+    };
 
     return (
         <>
@@ -47,16 +73,18 @@ const Admin = () => {
                     }}>
                     <TableHead>
                         <TableRow>
+                            <TableCell>Flag for review</TableCell>
                             <TableCell>Feeling</TableCell>
                             <TableCell>Understanding</TableCell>
                             <TableCell>Support</TableCell>
                             <TableCell>Comments</TableCell>
+                            <TableCell align="right">Delete</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {
                             feedbackArray.map(feedbackItem => (
-                                <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} />
+                                <FeedbackItem key={feedbackItem.id} feedback={feedbackItem} deleteFeedback={deleteFeedback} flagItem={flagItem} />
                             ))
                         }
                     </TableBody>

@@ -27,5 +27,28 @@ router.get('/', (req, res) => {
     });
 });
 
+// DELETE /feedback
+router.delete('/:id', (req, res) => {
+    let queryText = 'DELETE FROM "feedback" WHERE "id" = $1;';
+    pool.query(queryText, [req.params.id]).then((result) => {
+        res.send(result.rows);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    });
+});
+
+// PUT /feedback/flagged/id
+router.put('/flagged/:id', (req, res) => {
+    const feedbackId = req.params.id;
+    const feedback = req.body;
+    const queryText = `UPDATE "feedback" SET "flagged" = $1 WHERE "id" = $2;`;
+    pool.query(queryText, [feedback.flagged, feedbackId]).then((results) => {
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    });
+});
 
 module.exports = router;
