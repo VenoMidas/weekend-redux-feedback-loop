@@ -51,6 +51,7 @@ const Admin = () => {
                             <TableCell>Understanding</TableCell>
                             <TableCell>Support</TableCell>
                             <TableCell>Comments</TableCell>
+                            <TableCell align="right">Delete</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

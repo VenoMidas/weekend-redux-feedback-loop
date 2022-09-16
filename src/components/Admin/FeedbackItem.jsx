@@ -1,6 +1,6 @@
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
-
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 const FeedbackItem = ({ feedback }) => {
 
     return (
@@ -10,6 +10,14 @@ const FeedbackItem = ({ feedback }) => {
                 <TableCell>{feedback.understanding}</TableCell>
                 <TableCell>{feedback.support}</TableCell>
                 <TableCell>{feedback.comments}</TableCell>
+                <TableCell align="right">
+                    <DeleteForeverIcon
+                        sx={{
+                            cursor: "pointer",
+                        }}
+                        color="error"
+                    />
+                </TableCell>
             </TableRow>
         </>
     );
