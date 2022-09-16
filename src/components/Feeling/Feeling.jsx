@@ -52,6 +52,7 @@ function Feeling() {
                         variant="standard"
                         error={feeling < 1 | feeling > 5 ? true : false}
                         helperText="Rate 1 through 5."
+                        InputProps={{ inputProps: { min: 1, max: 5 } }}
                     />
                 </CardContent>
 

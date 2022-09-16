@@ -52,6 +52,7 @@ function Supported() {
                         variant="standard"
                         error={support < 1 | support > 5 ? true : false}
                         helperText="Rate 1 through 5."
+                        InputProps={{ inputProps: { min: 1, max: 5 } }}
                     />
                 </CardContent>
 

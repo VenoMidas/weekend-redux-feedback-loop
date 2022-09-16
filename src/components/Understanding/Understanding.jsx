@@ -52,6 +52,7 @@ function Understanding() {
                         variant="standard"
                         error={understanding < 1 | understanding > 5 ? true : false}
                         helperText="Rate 1 through 5."
+                        InputProps={{ inputProps: { min: 1, max: 5 } }}
                     />
                 </CardContent>
 
