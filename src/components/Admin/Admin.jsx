@@ -17,6 +17,31 @@ const Admin = () => {
         getFeedback();
     }, []);
 
+    /**
+     * @api {GET} /feedback Request feedback information
+     * @apiName getFeedback
+     * @apiGroup Feedback
+     * @apiVersion 0.1.0
+     * 
+     * @apiSuccess {Number} id The id of the feedback object
+     * @apiSuccess {Number} feeling The "feeling" rating
+     * @apiSuccess {Number} understanding The "understanding" rating
+     * @apiSuccess {Number} support The "support" rating
+     * @apiSuccess {String} [comments] Any comments that were left
+     * @apiSuccess {Boolean} flagged=false Is the feedback flaged?
+     * @apiSuccess {Date} date The date the feedback was submitted
+     * 
+     * @apiSuccessExample Example data on success:
+     * {
+     *  id: 1,
+     *  feeling: 4,
+     *  understanding: 4,
+     *  support: 5,
+     *  comments: 'Doing Great!',
+     *  flagged: false,
+     *  date: 2022-09-16
+     * }
+     */
     const getFeedback = () => {
         axios({
             method: 'GET',
@@ -28,6 +53,16 @@ const Admin = () => {
         });
     };
 
+    /**
+     * @api {DELETE} /feedback/:id Delete feedback object
+     * @apiName deleteFeedback
+     * @apiGroup Feedback
+     * @apiVersion 0.1.0
+     * 
+     * @apiParam {Number} feedbackId The id of the user
+     * 
+     * @apiError SomethingWentWrong An error returned on the DELETE /feedback/:id
+     */
     const deleteFeedback = (feedbackId) => {
         axios({
             method: 'DELETE',
@@ -40,6 +75,17 @@ const Admin = () => {
         });
     };
 
+    /**
+     * @api {PUT} /feedback/flagged/:id Update feedback object
+     * @apiName putFeedback
+     * @apiGroup Feedback
+     * @apiVersion 0.1.0
+     * 
+     * @apiParam {Number} feedbackId The id of the user
+     * @apiParam {Boolean} flagged The status of "flagged"
+     * 
+     * @apiError SomethingWentWrong An error returned on the PUT /feedback/flagged/:id
+     */
     function flagItem(feedbackId, flagged) {
         axios({
             method: 'PUT',

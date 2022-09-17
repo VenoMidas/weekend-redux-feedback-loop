@@ -1,6 +1,10 @@
 {
-  "name": "react-reflection-board",
+  "name": "react-redux_feedback_loop",
   "version": "0.1.0",
+  "description": "A sample multi-page form using Redux",
+  "apidoc": {
+    "title": "Feedback Loop apidoc"
+  },
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {

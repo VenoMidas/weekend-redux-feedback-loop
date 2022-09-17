@@ -14,6 +14,19 @@ function Review() {
     const history = useHistory();
     const feedback = useSelector(store => store)
 
+    /**
+     * @api {POST} /feedback Submit feedback to database
+     * @apiName postFeedback
+     * @apiGroup Feedback
+     * @apiVersion 0.1.0
+     * 
+     * @apiParam {Number} feeling The "feeling" rating
+     * @apiParam {Number} understanding The "understanding" rating
+     * @apiParam {Number} support The "support" rating
+     * @apiParam {String} [comments] Any comments that were left
+     * 
+     * @apiError SomethingWentWrong An error returned on the POST /feedback
+     */
     const handleSubmit = () => {
         axios({
             method: 'POST',
