@@ -132,7 +132,7 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [X] Add comments
 - [X] Update Readme   
     - [X] Link to deployed site
-    - [ ] link to apidoc
+    - [X] link to apidoc
     - [X] license
 
 - [X] Deploy to heroku

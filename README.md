@@ -7,11 +7,11 @@
 
 _Duration: Weekend Sprint_
 
-A gallery to display images of my life!
+A form separated into individual input to demonstrate using react redux. Also includes an admin page displaying the collected feedback.
 
 [Deployed version of app](https://aqueous-waters-95713.herokuapp.com/#/)
 
-[Link to APIdoc]()
+[Link to APIdoc](https://venomidas.github.io/weekend-redux-feedback-loop/)
 
 ## Screenshot
 
