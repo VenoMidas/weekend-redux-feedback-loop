@@ -133,6 +133,6 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [X] Update Readme   
     - [ ] Link to deployed site
     - [ ] link to apidoc
-    - [ ] license
+    - [X] license
 
 - [ ] Deploy to heroku
