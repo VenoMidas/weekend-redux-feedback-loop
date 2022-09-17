@@ -131,8 +131,8 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
 - [X] API Doc
 - [X] Add comments
 - [X] Update Readme   
-    - [ ] Link to deployed site
+    - [X] Link to deployed site
     - [ ] link to apidoc
     - [X] license
 
-- [ ] Deploy to heroku
+- [X] Deploy to heroku

@@ -9,7 +9,7 @@ _Duration: Weekend Sprint_
 
 A gallery to display images of my life!
 
-[Deployed version of app]()
+[Deployed version of app](https://aqueous-waters-95713.herokuapp.com/#/)
 
 [Link to APIdoc]()
 
