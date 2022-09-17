@@ -129,7 +129,7 @@ Deploy your project to Heroku. You'll need to read the special instructions for 
     - [X] Add the ability to flag an existing feedback entry for further review on the /admin view.
 
 - [X] API Doc
-- [ ] Add comments
+- [X] Add comments
 - [ ] Update Readme   
 
 - [ ] Deploy to heroku
