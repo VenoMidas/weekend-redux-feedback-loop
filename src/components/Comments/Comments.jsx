@@ -11,18 +11,24 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Comments() {
+    // use history for navigation
     const history = useHistory();
+    // dispatch for redux
     const dispatch = useDispatch();
+    // set variable for comments from redux store
     const comments = useSelector(store => store.comments);
 
+    // dispatch payload to set_comments
     const handleChange = (event) => {
         dispatch({ type: 'SET_COMMENTS', payload: event.target.value });
     };
 
+    // for "go back" navigation
     const goBack = () => {
         history.goBack();
     };
 
+    // displays the Progress stepper and comment form and nav buttons
     return (
         <>
             <ProgressStepper stepProp={4} />

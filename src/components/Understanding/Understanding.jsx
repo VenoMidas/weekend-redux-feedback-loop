@@ -11,18 +11,24 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Understanding() {
+    // use history for navigation
     const history = useHistory();
+    // dispatch for redux
     const dispatch = useDispatch();
+    // set variable for understanding from redux store
     const understanding = useSelector(store => store.understanding);
 
+    // dispatch payload to set_understanding
     const handleChange = (event) => {
         dispatch({ type: 'SET_UNDERSTANDING', payload: event.target.value });
     };
 
+    // for "go back" navigation
     const goBack = () => {
         history.goBack();
     };
 
+    // displays the Progress stepper and understanding form and nav buttons
     return (
         <>
             <ProgressStepper stepProp={2} />

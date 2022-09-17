@@ -7,6 +7,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
+// Define reducers
 const feeling = (state = 0, action) => {
     if (action.type === 'SET_FEELING') {
         return action.payload;
@@ -46,6 +47,7 @@ const comments = (state = '', action) => {
         return state;
     };
 };
+// End reducers
 
 // redux store for reducers
 const storeInstance = createStore(

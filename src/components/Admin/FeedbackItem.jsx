@@ -11,16 +11,21 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Checkbox from '@mui/material/Checkbox';
 
 const FeedbackItem = ({ feedback, deleteFeedback, flagItem }) => {
+    // setters and getters
     const [open, setOpen] = useState(false);
 
+    // setOpen to true on click to display dialog
     const handleClickOpen = () => {
         setOpen(true);
     };
 
+    // setOpen to false on click to hide dialog
     const handleClose = () => {
         setOpen(false);
     };
 
+    // displays feedback item in table rows/cells
+    // includes a dialog box that shows/hide on button click
     return (
         <>
             <TableRow>

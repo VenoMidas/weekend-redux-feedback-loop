@@ -6,8 +6,10 @@ import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+    // use location for react router
     const location = useLocation();
 
+    // displays header and links to admin and feedback sections
     return (
         <>
             <Grid container alignItems="center" className='App-header'>

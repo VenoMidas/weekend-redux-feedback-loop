@@ -8,14 +8,18 @@ import Typography from '@mui/material/Typography';
 import StartIcon from '@mui/icons-material/Start';
 
 function Success() {
+    // use history for navigation
     const history = useHistory();
+    // dispatch for redux
     const dispatch = useDispatch();
 
+    // clears all values in redux store and navigates to the start 
     const handleButton = () => {
         dispatch({ type: 'CLEAR_ALL' });
         history.push('/step/feeling');
     };
 
+    // displays the success message and new survey button
     return (
         <>
             <Card

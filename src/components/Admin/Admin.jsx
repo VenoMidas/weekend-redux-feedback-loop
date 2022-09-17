@@ -11,8 +11,10 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 const Admin = () => {
+    // setters and getters
     const [feedbackArray, setFeedbackArray] = useState([]);
 
+    // useEffect calls getFeedback on page load
     useEffect(() => {
         getFeedback();
     }, []);
@@ -101,6 +103,7 @@ const Admin = () => {
         });
     };
 
+    // return a table with the feedbackArray mapped into table rows/data
     return (
         <>
             <Typography variant="h3" gutterBottom>Results</Typography>

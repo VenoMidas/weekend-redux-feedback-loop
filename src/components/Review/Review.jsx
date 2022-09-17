@@ -11,7 +11,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Review() {
+    // use history for navigation
     const history = useHistory();
+    // store the store in object named feedback
     const feedback = useSelector(store => store)
 
     /**
@@ -45,10 +47,12 @@ function Review() {
         });
     };
 
+    // for "go back" navigation
     const goBack = () => {
         history.goBack();
     };
 
+    // displays the Progress stepper and review page and nav buttons
     return (
         <>
             <ProgressStepper stepProp={5} />

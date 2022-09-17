@@ -4,8 +4,10 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 
 const ProgressStepper = ({ stepProp }) => {
+    // define steps for stepper
     const steps = ['Feeling', 'Understanding', 'Support', 'Comments', 'Review'];
 
+    // returns stepper that maps the steps array into individual steps
     return (
         <Box sx={{ width: '100%' }}>
             <Stepper activeStep={stepProp - 1} alternativeLabel>

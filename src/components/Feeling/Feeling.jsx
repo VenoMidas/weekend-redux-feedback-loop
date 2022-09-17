@@ -11,18 +11,24 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Feeling() {
+    // use history for navigation
     const history = useHistory();
+    // dispatch for redux
     const dispatch = useDispatch();
+    // set variable for feeling from redux store
     const feeling = useSelector(store => store.feeling);
 
+    // dispatch payload to set_feeling
     const handleChange = (event) => {
         dispatch({ type: 'SET_FEELING', payload: event.target.value });
     };
 
+    // for "go back" navigation
     const goBack = () => {
         history.goBack();
     };
 
+    // displays the Progress stepper and feeling form and nav buttons
     return (
         <>
             <ProgressStepper stepProp={1} />

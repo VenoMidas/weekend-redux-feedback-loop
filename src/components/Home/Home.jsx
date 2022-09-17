@@ -3,8 +3,10 @@ import Button from '@mui/material/Button';
 import StartIcon from '@mui/icons-material/Start';
 
 function Home() {
+    // use history for navigation
     const history = useHistory();
 
+    // display a button that starts survey
     return (
         <>
             <Button

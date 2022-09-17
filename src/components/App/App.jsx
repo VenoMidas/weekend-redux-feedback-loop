@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 
 function App() {
 
+  // Inlcudes the router/routes for the app components
   return (
     <Container className='App'>
 

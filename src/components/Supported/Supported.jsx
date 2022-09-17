@@ -11,18 +11,24 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 function Supported() {
+    // use history for navigation
     const history = useHistory();
+    // dispatch for redux
     const dispatch = useDispatch();
+    // set variable for support from redux store
     const support = useSelector(store => store.support);
 
+    // dispatch payload to set_support
     const handleChange = (event) => {
         dispatch({ type: 'SET_SUPPORT', payload: event.target.value });
     };
 
+    // for "go back" navigation
     const goBack = () => {
         history.goBack();
     };
 
+    // displays the Progress stepper and supported form and nav buttons
     return (
         <>
             <ProgressStepper stepProp={3} />
